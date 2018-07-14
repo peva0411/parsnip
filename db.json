@@ -4,13 +4,13 @@
       "id": 1,
       "title": "Learn Redux",
       "description": "The store, actions, and reducers, oh my!",
-      "status": "Unstarted"
+      "status": "In Progress"
     },
     {
       "id": 2,
       "title": "Peace on Earth",
       "description": "No big deal.",
-      "status": "Unstarted"
+      "status": "In Progress"
     },
     {
       "id": 3,
@@ -27,13 +27,13 @@
     {
       "title": "",
       "description": "",
-      "status": "Unstarted",
+      "status": "In Progress",
       "id": 5
     },
     {
       "title": "w",
       "description": "w",
-      "status": "Unstarted",
+      "status": "In Progress",
       "id": 6
     }
   ]
