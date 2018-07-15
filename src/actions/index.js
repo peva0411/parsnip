@@ -52,13 +52,35 @@ export function fetchTasksSucceeded(tasks) {
   }
 }
 
+function fetchTasksStarted(){
+  return {
+    type : 'FETCH_TASKS_STARTED'
+  };
+}
+
+function fetchTasksFailed(error){
+  return {
+    type:'FETCH_TASKS_FAILED',
+    payload: {
+      error,
+    },
+  };
+}
+
 export function fetchTasks() {
   return dispatch => {
+    dispatch(fetchTasksStarted());
    api.fetchTasks()
       .then(resp => {
-        dispatch(fetchTasksSucceeded(resp.data));
+        // setTimeout(() => {
+        // dispatch(fetchTasksSucceeded(resp.data));
+        // }, 2000);
+        throw new Error('Oh noes!');
+      })
+      .catch(err => {
+          dispatch(fetchTasksFailed(err.message));
       });
-  }
+  };
 }
 
 
