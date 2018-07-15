@@ -10,7 +10,7 @@
       "id": 2,
       "title": "Peace on Earth",
       "description": "No big deal.",
-      "status": "In Progress"
+      "status": "Unstarted"
     },
     {
       "id": 3,
@@ -21,7 +21,7 @@
     {
       "title": "test2",
       "description": "something",
-      "status": "In Progress",
+      "status": "Unstarted",
       "id": 4
     },
     {
@@ -35,6 +35,12 @@
       "description": "w",
       "status": "In Progress",
       "id": 6
+    },
+    {
+      "title": "test analytics",
+      "description": "analytics",
+      "status": "Unstarted",
+      "id": 7
     }
   ]
 }
